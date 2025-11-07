@@ -54,6 +54,9 @@ const Navigation = () => {
         <a href="#contact" className="nav fade-up-in s5">
           <h3 className="nav-text">Contact</h3>
         </a>
+        <a href="" className="nav fade-up-in s6">
+          <button className="btn-alt">Register Now</button>
+        </a>
       </div>
     </header>
   );

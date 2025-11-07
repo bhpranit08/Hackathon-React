@@ -131,6 +131,6 @@
     box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-alt) 90%, transparent);
   }
   100% {
-    box-shadow: 0 0 0 30px transparent;
+    box-shadow: 0 0 0 20px transparent;
   }
 }

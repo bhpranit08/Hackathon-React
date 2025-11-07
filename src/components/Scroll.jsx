@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
 
-const Scroll = ({ children, className }) => {
+const Scroll = ({ children, className, id }) => {
   const thres = (v = 1) => ({ threshold: v });
 
-  const obsFuncConstructor = (selector, animation) => (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        document
-          .querySelectorAll(selector)
-          .forEach((el) => el.classList.add(animation));
-      }
-    });
+  const obsFuncConstructor = (selector, animation) => {
+    return (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document
+            .querySelectorAll(selector)
+            .forEach((el) => el.classList.add(animation));
+        }
+      });
+    };
   };
 
   useEffect(() => {
@@ -40,7 +42,11 @@ const Scroll = ({ children, className }) => {
     return () => observers.forEach((o) => o.disconnect());
   }, []);
 
-  return <div className={className}>{children}</div>;
+  return (
+    <div className={className} id={id}>
+      {children}
+    </div>
+  );
 };
 
 export default Scroll;

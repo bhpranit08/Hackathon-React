@@ -1,0 +1,5 @@
+.content-section {
+  width: 100%;
+  height: 100dvh;
+  flex-direction: column;
+}
