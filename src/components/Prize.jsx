@@ -1,8 +1,11 @@
 import React from "react";
 import Scroll from "./Scroll";
+import Autoplay from "./Autoplay.jsx";
+import Image1 from "../assets/Image1.png";
 import { svg_d } from "./handlers/svg.js";
 
 const Prize = () => {
+  const slides = [Image1, Image1, Image1];
   const svg_default = (path) => {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
@@ -80,7 +83,9 @@ const Prize = () => {
               </div>
             </div>
           </div>
-          <div className="merch-carousel"></div>
+          <div className="merch-carousel">
+            <Autoplay images={slides} interval={3000} />
+          </div>
         </div>
         <div className="swags centered-flex">
           {svgBank("gifts", "#FFB703")}
