@@ -33,13 +33,20 @@ const Prize = () => {
           <Autoplay images={slides} interval={3000} />
         </div>
         <div id="prize-div2" className="centered-flex scroll s00">
+          <h1
+            style={{
+              fontSize: "clamp(1.5rem, 5vw, 3rem)",
+            }}
+          >
+            Prize Distriuition:
+          </h1>
           <PrizeDonut
-            width={400}
-            height={400}
-            innerRadius={100}
-            outerRadius={180}
-            rectWidth={100}
-            rectHeight={80}
+            total={50000}
+            width="100%"
+            height="100%"
+            innerRadius="70%"
+            outerRadius="90%"
+            primary="transparent"
           />
         </div>
         <div id="prize-div3" className="centered-flex scroll s01">
@@ -60,7 +67,7 @@ const Prize = () => {
         </div>
         <div id="prize-div4" className="centered-flex scroll s02">
           <span className="prize-gift-icon">
-            {svgBank("gifts", "#ffffff", "solid")}
+            {svgBank("gifts", "#D33A3A", "solid")}
           </span>
           <span className="prize-gift-text">
             Stickers, Freebies <br id="break2" /> and Swags <br id="break1" />{" "}

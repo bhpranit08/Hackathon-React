@@ -3,3 +3,10 @@
   height: 100dvh;
   flex-direction: column;
 }
+
+.content-section:nth-child(1){
+  background-image: url('../assets/Hero.png');
+  background-size: cover; /* make it fill the section */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* avoid tiling */
+}
