@@ -4,8 +4,8 @@
   flex-direction: column;
 }
 
-.content-section:nth-child(1){
-  background-image: url('../assets/Hero.png');
+.content-section:nth-child(1) {
+  background-image: url("../assets/Hero.webp");
   background-size: cover; /* make it fill the section */
   background-position: center; /* center the image */
   background-repeat: no-repeat; /* avoid tiling */

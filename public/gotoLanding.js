@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document
         .querySelector(".main-cnt")
         ?.scrollIntoView({ behavior: "auto", block: "start" }),
-    1000
+    1000,
   );
 });

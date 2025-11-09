@@ -9,7 +9,7 @@ const Autoplay = ({ images = [], interval = 2500, className = "" }) => {
     if (len <= 1) return;
     timeoutRef.current = setTimeout(
       () => setIndex((p) => (p + 1) % len),
-      interval
+      interval,
     );
     return () => clearTimeout(timeoutRef.current);
   }, [index, interval, len]);

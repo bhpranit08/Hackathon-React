@@ -1,14 +1,10 @@
-:root {
-  --accent: #73f5ed;
-}
-
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--background);
+  background-color: color-mix(in srgb, var(--background) 90%, transparent);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,14 +13,13 @@
   filter: blur(10px);
   transform: scale(1);
   transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1),
-    filter 1s cubic-bezier(0.77, 0, 0.175, 1);
+    filter 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .overlay.visible {
   opacity: 1;
-  filter: blur(0);
+  filter: blur(0px);
 }
-
 .overlay.fade-out {
   opacity: 0;
   filter: blur(6px);

@@ -1,7 +1,9 @@
 button {
   transform: translate(0, 0);
   box-shadow: 0 0 0 var(--secondary);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
 button:hover {

@@ -1,5 +1,5 @@
 import React from "react";
-import verticalLogo from "../assets/verticalLogo.png";
+import verticalLogo from "../assets/verticalLogo.webp";
 const Hero = () => {
   return (
     <div className="content-section centered-flex blur-in">

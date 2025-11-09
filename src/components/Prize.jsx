@@ -2,7 +2,7 @@ import React from "react";
 import Scroll from "./Scroll";
 import Autoplay from "./Autoplay.jsx";
 import PrizeDonut from "./PrizeDonut";
-import Image1 from "../assets/Image1.png";
+import Image1 from "../assets/Image1.webp";
 import { svg_d } from "./handlers/svg.js";
 
 const Prize = () => {
