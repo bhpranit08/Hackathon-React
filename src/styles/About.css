@@ -1,0 +1,99 @@
+.about-section {
+  padding: clamp(4rem, 6vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vw, 3rem);
+  align-items: center;
+  justify-content: center;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 620px;
+  white-space: normal;
+}
+
+.about-header h2 {
+  letter-spacing: 0.05em;
+}
+
+.about-header p {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  color: rgba(242, 243, 217, 0.8);
+  color: color-mix(in srgb, var(--text) 80%, rgba(255, 255, 255, 0.6));
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1 1 280px;
+  min-width: 280px;
+  max-width: 500px;
+  background: rgba(21, 30, 63, 0.85);
+  border-color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 80%, #3de2a3 20%);
+  box-shadow: 0 20px 50px rgba(3, 0, 39, 0.45);
+  backdrop-filter: blur(6px);
+  white-space: normal;
+  transform: translate(0, 0);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0 var(--accent);
+}
+
+.about-card h3 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.about-card p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: rgba(242, 243, 217, 0.75);
+  color: color-mix(in srgb, var(--text) 70%, rgba(255, 255, 255, 0.5));
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-block: clamp(4.5rem, 10vw, 6rem);
+  }
+
+  .about-header {
+    text-align: center;
+    align-self: center;
+  }
+}
+
